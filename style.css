@@ -1,0 +1,248 @@
+body {
+  font-family: "raleway", sans-serif;
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style-type: none;
+}
+/************************ header *********************/
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo {
+  padding: 1vw 0vw 0vw 2vw;
+  width: 12vh;
+  align-items: center;
+}
+.logo:hover {
+  width: 16vh;
+  transition: 0.6s;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-right: 2vw;
+}
+nav ul {
+  display: flex;
+  padding: 1vw;
+}
+li a {
+  padding: 2vw;
+}
+.signIn a {
+  text-decoration: none;
+  color: #0065fc;
+}
+.signIn:hover {
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+li a:hover {
+  text-transform: uppercase;
+  color: #0065fc;
+  border-top: 2px #0065fc solid;
+  transition: 0.5s;
+}
+/************************** main ************************/
+/******** section searchBar *********/
+/* h1 p */
+#h1 {
+  flex-direction: column;
+  margin: 0;
+}
+h1 {
+  margin-bottom: 0;
+}
+#h1 p {
+  margin-top: 0.5vw;
+}
+/************ formulaire ************/
+/* ville */
+#formulaire {
+  height: 50px;
+  width: 400px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+}
+#carte {
+  background-color: #f2f2f2;
+  border: 1px solide #f2f2f2;
+  height: 100%;
+  width: 50px;
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#carte:hover {
+  cursor: pointer;
+  background-color: #0065fc;
+  color: white;
+  transition: 0.4s;
+}
+#formulaire input[type="text"] {
+  font-size: 15px;
+  margin: 0;
+  padding: 10px;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  border-left: none;
+  border-right: none;
+  font-weight: bold;
+}
+#formulaire input[type="submit"] {
+  padding: 13px;
+  font-size: 20px;
+  background-color: #0065fc;
+  cursor: pointer;
+  color: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 1px solid #f2f2f2;
+  width: 10rem;
+}
+#formulaire input[type="submit"]:hover {
+  background-color: #deebff;
+  color: rgba(8, 6, 6, 0.342);
+  transition: 0.4s;
+}
+#loupe {
+  display: none;
+}
+/************* filtres **************/
+#filtres {
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-between;
+  max-width: 80%;
+}
+.boiteFiltres {
+  display: flex;
+  align-items: center;
+  border: 1px solid #deebff;
+  border-radius: 30px;
+}
+.boiteFiltres:hover {
+  background-color: #deebff;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.texteFiltres {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#filtres i {
+  background-color: #deebff;
+  padding: 0.8rem;
+  border-radius: 30px;
+  color: #0065fc;
+}
+/*********** ligne d'info **********/
+.info p {
+  display: flex;
+  font-size: 80%;
+  align-items: center;
+}
+.info i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+  color: #0065fc;
+  font-size: 0.8rem;
+  border: 1px solid #deebff;
+  border-radius: 25px;
+}
+/**************** hôtels **************/
+#hotels {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+/*************** marseille ************/
+#marseille {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  margin-right: 10px;
+  padding: 20px 0px 30px 20px;
+}
+#photosMarseille {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-right: 20px;
+}
+.encartMarseille {
+  width: 30%;
+  min-width: 200px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.encartMarseille figure {
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 10px 10px 10px #c3c3c3;
+  border-radius: 20px;
+  margin: 15px;
+  padding: 5px;
+}
+.encartMarseille figure img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+.encartMarseille figcaption {
+  margin-left: 15px;
+}
+#plus {
+  font-weight: bold;
+}
+/**************** populaire **************/
+#populaire {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+#tetePopulaire {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 15px 10px 15px;
+}
+
+/*********************** footer ******************/
+footer {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-around;
+}
+footer ul {
+  padding: 2vw 0;
+  margin-top: 0;
+}
+footer li {
+  padding: 1vw 0 1vw 0;
+}
+h4 {
+  margin-bottom: 0;
+}
