@@ -4,6 +4,7 @@
 }
 body {
   font-family: "raleway", sans-serif;
+  font-size: 0.9rem;
 }
 #body {
   width: 95%;
@@ -197,38 +198,30 @@ h1 {
 /**************** hôtels **************/
 #hotels {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 2.8vw;
 }
 /*************** marseille ************/
 #marseille {
   display: flex;
+  flex: 60%;
   flex-direction: column;
-  justify-content: space-between;
   background-color: #f2f2f2;
   border-radius: 20px;
-  margin-right: 10px;
-  padding: 20px 0px 30px 20px;
+  padding: 1.8vw 1vw 1.1vw 1.7vw;
+  margin-right: 2.2vw;
 }
+
 #photosMarseille {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-right: 20px;
+  align-content: space-between;
 }
-.encartMarseille {
-  display: flex;
-  width: 30%;
-  min-width: 320px;
-  min-height: 180px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-.encartMarseille figure {
+#marseille figure {
+  flex: 1 30%;
   background-color: white;
-  min-width: 200px;
   box-shadow: 5px 5px 5px #d1d1d1;
   border-radius: 20px;
-  margin: 15px;
+  margin: 10px 15px 10px 0px;
   padding: 5px;
 }
 .encartMarseille img {
@@ -238,45 +231,54 @@ h1 {
   border-radius: 20px 20px 0px 0px;
 }
 .encartMarseille figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
   margin-left: 15px;
+}
+.texte {
+  display: flex;
+  flex-direction: column;
+}
+.etoiles {
+  display: flex;
 }
 #plus {
   font-weight: bold;
+  margin-top: 2vw;
 }
 /**************** populaire **************/
 #populaire {
+  flex: 30%;
   background-color: #f2f2f2;
   border-radius: 20px;
-  margin-left: 20px;
-  padding-bottom: 20px;
+  padding: 1.8vw 1vw 1.1vw 1.7vw;
 }
 #tetePopulaire {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 15px 10px 15px;
+  /* padding: 20px 15px 10px 15px; */
 }
 #photoPopulaire {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-right: 20px;
 }
 .encartPopulaire {
   display: flex;
   height: 180px;
-  min-width: 320px;
-  margin-left: 15px;
-  margin-right: 15px;
 }
-.encartPopulaire figure {
+#populaire figure {
   display: flex;
+  flex: 30%;
   background-color: white;
-  min-width: 200px;
   box-shadow: 5px 5px 5px #d1d1d1;
   border-radius: 20px;
-  margin: 15px;
   padding: 5px;
+  margin: 1.1vw 1.3vw 1vw 0vw;
 }
 .encartPopulaire img {
   width: 40%;
@@ -433,6 +435,13 @@ h4 {
   #hotels {
     flex-direction: column-reverse;
   }
+  #photoMarseille {
+    display: flex;
+    flex-direction: column;
+  }
+  #marseille figure {
+    flex: 100%;
+  }
   footer {
     margin: 0px;
     flex-direction: column;
@@ -479,4 +488,8 @@ h4 {
   #propos {
     padding-left: 80px;
   }
+  /* #photosMarseille {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; */
 }
