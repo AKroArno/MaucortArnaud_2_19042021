@@ -214,7 +214,7 @@ h1 {
 #photosMarseille {
   display: flex;
   flex-wrap: wrap;
-  align-content: space-between;
+  justify-content: space-between;
 }
 #marseille figure {
   flex: 1 30%;
@@ -259,7 +259,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding: 20px 15px 10px 15px; */
 }
 #photoPopulaire {
   display: flex;
@@ -304,16 +303,19 @@ h1 {
 }
 #block1 {
   display: flex;
+  flex: 20%;
   padding: 0px;
 }
 .block1 {
-  width: 20vw;
+  display: flex;
 }
 #block2 {
   display: flex;
+  flex: 20%;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
-  padding: 0px;
+  margin: 0vw 1.6vw 0 1.6vw;
 }
 #block1 img {
   width: 100%;
@@ -322,7 +324,6 @@ h1 {
 }
 #pomegues {
   height: 50%;
-  width: 20vw;
 }
 #pomegues img {
   height: 70%;
@@ -335,20 +336,18 @@ h1 {
 
 #frioul {
   height: 40%;
-  width: 20vw;
 }
 #frioul img {
-  height: 64%;
+  height: 62%;
   width: 100%;
   object-fit: cover;
 }
 .block2 {
   height: 45%;
-  width: 20vw;
 }
 .block2 img {
   width: 100%;
-  height: 69%;
+  height: 66.5%;
   object-fit: cover;
 }
 #activite figcaption {
@@ -364,12 +363,25 @@ h1 {
 }
 /*********************** footer ******************/
 footer {
+  display: flex;
   height: 200px;
   margin-top: 20px;
-  margin-left: -130px;
   background-color: #f2f2f2;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 1.2vw;
+}
+#propos {
+  flex: 1 30%;
+  justify-content: flex-start;
+}
+#hebergement {
+  flex: 1 30%;
+  justify-content: flex-start;
+}
+#assistance {
+  flex: 1 30%;
+  justify-content: flex-start;
 }
 footer ul {
   padding: 20px 0;
@@ -413,27 +425,14 @@ h4 {
   #hotels {
     flex-direction: column-reverse;
   }
+  /**************************** populaire ********************************/
   #populaire {
     margin-left: 0px;
     margin-bottom: 25px;
   }
+  /**************************** marseille ********************************/
   #marseille {
     margin-right: 0px;
-  }
-  footer {
-    margin: 0px;
-    flex-direction: column;
-    height: auto;
-    width: 100%;
-    padding-left: 30px;
-  }
-  #photoactivite {
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 401px) and (max-width: 850px) {
-  #hotels {
-    flex-direction: column-reverse;
   }
   #photoMarseille {
     display: flex;
@@ -442,13 +441,46 @@ h4 {
   #marseille figure {
     flex: 100%;
   }
+  /***************************** activite *******************************/
+  #activite {
+    width: 95%;
+    margin-left: 1.5vw;
+  }
+  #photoActivite {
+    flex-direction: column;
+    height: auto;
+  }
+  .block1 {
+    display: flex;
+    flex-direction: column;
+  }
+  #activite img {
+    flex: 1;
+    height: 140px;
+  }
+  #block1 figure {
+    width: 100%;
+    margin-bottom: 1.1vw;
+    height: 180px;
+  }
+  #block2 figure {
+    width: 100%;
+    margin-bottom: 1.1vw;
+    height: 180px;
+  }
+  #block2 {
+    margin: 0;
+  }
+
+  /**************************** footer ***********************************/
   footer {
     margin: 0px;
     flex-direction: column;
     height: auto;
     width: 100%;
-    padding-left: 30px;
   }
+}
+@media screen and (min-width: 401px) and (max-width: 850px) {
   #rechercher {
     display: none;
   }
@@ -465,31 +497,65 @@ h4 {
     border: 1px solid #f2f2f2;
     width: 40px;
   }
+  #hotels {
+    flex-direction: column-reverse;
+  }
+  /***************** marseille ************************/
   #marseille {
     margin-right: 0px;
   }
+  #photoMarseille {
+    display: flex;
+    flex-direction: column;
+  }
+  #marseille figure {
+    flex: 100%;
+  }
+  /*************************** populaire*****************/
   #populaire {
     margin-left: 0px;
     margin-bottom: 25px;
   }
-
+  /************************ activite *********************/
+  #activite {
+    width: 95%;
+    margin-left: 1.5vw;
+  }
   #photoActivite {
+    flex-direction: column;
+    height: auto;
+  }
+  .block1 {
+    display: flex;
     flex-direction: column;
   }
   #activite img {
+    flex: 1;
     height: 140px;
-    height: 100%;
+  }
+  #block1 figure {
+    width: 100%;
+    margin-bottom: 1.1vw;
+    height: 180px;
+  }
+  #block2 figure {
+    width: 100%;
+    margin-bottom: 1.1vw;
+    height: 180px;
+  }
+  #block2 {
+    margin: 0;
+  }
+  /************************* footer ************************/
+  footer {
+    margin: 0px;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
   }
 }
 @media screen and (min-width: 851px) and (max-width: 1250px) {
   #footer {
     height: auto;
   }
-  #propos {
-    padding-left: 80px;
-  }
-  /* #photosMarseille {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; */
 }
