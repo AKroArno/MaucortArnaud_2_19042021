@@ -10,6 +10,10 @@ body {
   width: 95%;
   margin-left: 40px;
 }
+body figure:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
 a {
   text-decoration: none;
   color: black;
@@ -18,7 +22,7 @@ ul {
   list-style-type: none;
 }
 h2 {
-  1.3rem
+  font-size: 1.3rem
 }
 .full {
   color: #0065fc;
@@ -33,15 +37,16 @@ header {
   flex-wrap: wrap;
   padding-top: 1.3vw;
 }
-.logo {
+#logo img {
   width: 11vh;
   align-items: center;
+  margin-right: auto;
 }
-.logo:hover {
-  width: 13vh;
+#logo:hover {
+  transform: scale(1.2);
   transition: 0.6s;
 }
-#navbar {
+nav {
   display: flex;
   align-items: center;
   font-size: 1.1rem;
@@ -54,12 +59,13 @@ nav ul {
 li a {
   padding: 2vw;
 }
-.signIn a {
+#signIn {
   text-decoration: none;
   color: #0065fc;
 }
-.signIn a:hover {
+#signIn:hover {
   border-bottom: 2px #0065fc solid;
+  border-top: none;
 }
 nav a:hover {
   color: #0065fc;
@@ -215,7 +221,6 @@ h1 {
   padding: 1.8vw 1vw 1.1vw 1.7vw;
   margin-right: 2.2vw;
 }
-
 #photosMarseille {
   display: flex;
   flex-wrap: wrap;
@@ -240,8 +245,6 @@ h1 {
   margin-left: 15px;
 }
 .texte {
-  /* display: flex;
-  flex-direction: column; */
   margin-bottom: 1vh;
 }
 .texte p {
@@ -344,7 +347,6 @@ h1 {
 .encartActiviteFrioul {
   height: 30%;
 }
-
 #frioul {
   height: 40%;
 }
@@ -411,6 +413,31 @@ h4 {
 /************************** Media queries ********************/
 
 @media screen and (max-width: 400px) {
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    width: 100%;
+  }
+  #signIn {
+    position: absolute;
+    top: 3.2vh;
+    right: 5vw;
+  }
+  nav a:hover {
+    border-top: none;
+  }
+  nav li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid #f2f2f2;
+    padding-bottom: 2vh;
+
+  }
+  nav li:hover {
+    border-bottom: 2px solid #0065fc;
+  }
+
   #boiteFiltres {
     margin: 0;
   }
@@ -444,6 +471,7 @@ h4 {
   /**************************** marseille ********************************/
   #marseille {
     margin-right: 0px;
+    background: none;
   }
   #photoMarseille {
     display: flex;
@@ -492,6 +520,32 @@ h4 {
   }
 }
 @media screen and (min-width: 401px) and (max-width: 850px) {
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    width: 100%;
+  }
+  #signIn {
+    position: absolute;
+    top: 3.2vh;
+    right: 5vw;
+  }
+  nav a:hover {
+    border-top: none;
+  }
+  nav li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid #f2f2f2;
+    padding-bottom: 2vh;
+
+  }
+  nav li:hover {
+    border-bottom: 2px solid #0065fc;
+  }
+
+
   #rechercher {
     display: none;
   }
@@ -514,6 +568,7 @@ h4 {
   /***************** marseille ************************/
   #marseille {
     margin-right: 0px;
+    background: none;
   }
   #photoMarseille {
     display: flex;
