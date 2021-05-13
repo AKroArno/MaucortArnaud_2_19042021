@@ -22,7 +22,7 @@ ul {
   list-style-type: none;
 }
 h2 {
-  font-size: 1.3rem
+  font-size: 1.3rem;
 }
 .full {
   color: #0065fc;
@@ -81,8 +81,10 @@ nav a:hover {
 h1 {
   margin-bottom: 0;
 }
-#h1 p {
+#h1 h2 {
   margin-top: 0.5vw;
+  font-size: 00.9rem;
+  font-weight: 100;
 }
 /************ formulaire ************/
 /* ville */
@@ -257,7 +259,7 @@ h1 {
 #plus {
   font-weight: bold;
   font-size: 1.2rem;
-  margin-top: 4vw;
+  margin-top: 5vh;
 }
 /**************** populaire **************/
 #populaire {
@@ -338,6 +340,7 @@ h1 {
 }
 #pomegues {
   height: 50%;
+  width: 100%;
 }
 #pomegues img {
   height: 70%;
@@ -364,15 +367,15 @@ h1 {
   object-fit: cover;
 }
 #activite figcaption {
-  margin-top: 10px;
-  margin-left: 10px;
+  margin-top: 2.8vh;
+  margin-left: 1vw;
 }
 #activite img {
   border-radius: 20px 20px 0px 0px;
 }
 #photoActivite figure {
   border-radius: 20px 20px 20px 20px;
-  box-shadow: 2.5px 2.5px 2.5px #f2f2f2;
+  box-shadow: 5px 5px 5px #d1d1d1;
 }
 /*********************** footer ******************/
 footer {
@@ -382,7 +385,7 @@ footer {
   background-color: #f2f2f2;
   display: flex;
   justify-content: space-between;
-  padding-left: 1.2vw;
+  padding-left: 3.2vw;
 }
 #propos {
   flex: 1 30%;
@@ -421,7 +424,7 @@ h4 {
   }
   #signIn {
     position: absolute;
-    top: 3.2vh;
+    top: 2vh;
     right: 5vw;
   }
   nav a:hover {
@@ -432,14 +435,12 @@ h4 {
     text-align: center;
     border-bottom: 3px solid #f2f2f2;
     padding-bottom: 2vh;
-
   }
   nav li:hover {
     border-bottom: 2px solid #0065fc;
   }
-
-  #boiteFiltres {
-    margin: 0;
+  .boiteFiltres {
+    margin: 3.5vw 2.6vw 0 0;
   }
   #rechercher {
     display: none;
@@ -458,15 +459,21 @@ h4 {
     width: 40px;
   }
   #formulaire input[type="text"] {
-    width: 120px;
+    width: 45vw;
   }
   #hotels {
     flex-direction: column-reverse;
   }
   /**************************** populaire ********************************/
+  aside {
+    padding: 1.8vw 1vw 1.1vw 1.7vw;
+  }
   #populaire {
     margin-left: 0px;
     margin-bottom: 25px;
+  }
+  #populaire figure {
+    margin-bottom: 2.4vh;
   }
   /**************************** marseille ********************************/
   #marseille {
@@ -479,6 +486,9 @@ h4 {
   }
   #marseille figure {
     flex: 100%;
+  }
+  #plus {
+    margin-top: 2vh;
   }
   /***************************** activite *******************************/
   #activite {
@@ -499,24 +509,28 @@ h4 {
   }
   #block1 figure {
     width: 100%;
-    margin-bottom: 1.1vw;
+    margin-bottom: 2.4vh;
     height: 180px;
   }
   #block2 figure {
     width: 100%;
-    margin-bottom: 1.1vw;
+    margin-bottom: 2.4vh;
     height: 180px;
   }
   #block2 {
     margin: 0;
   }
-
+  #activite figcaption {
+    margin-top: 1vh;
+    margin-left: 4vw;
+  }
   /**************************** footer ***********************************/
   footer {
     margin: 0px;
     flex-direction: column;
     height: auto;
     width: 100%;
+    padding-left: 6vh;
   }
 }
 @media screen and (min-width: 401px) and (max-width: 850px) {
@@ -528,7 +542,7 @@ h4 {
   }
   #signIn {
     position: absolute;
-    top: 3.2vh;
+    top: 2.2vh;
     right: 5vw;
   }
   nav a:hover {
@@ -539,13 +553,10 @@ h4 {
     text-align: center;
     border-bottom: 3px solid #f2f2f2;
     padding-bottom: 2vh;
-
   }
   nav li:hover {
     border-bottom: 2px solid #0065fc;
   }
-
-
   #rechercher {
     display: none;
   }
@@ -562,6 +573,10 @@ h4 {
     border: 1px solid #f2f2f2;
     width: 40px;
   }
+  .boiteFiltres {
+    margin-left: 0px;
+    margin-right: 2.6vw;
+  }
   #hotels {
     flex-direction: column-reverse;
   }
@@ -577,11 +592,21 @@ h4 {
   #marseille figure {
     flex: 100%;
   }
+  #plus {
+    margin-top: 0vh;
+  }
   /*************************** populaire*****************/
+  aside {
+    padding: 1.8vw 1vw 1.1vw 1.7vw;
+  }
   #populaire {
     margin-left: 0px;
     margin-bottom: 25px;
   }
+  #populaire figure {
+    margin-bottom: 2.4vh;
+  }
+
   /************************ activite *********************/
   #activite {
     width: 95%;
@@ -601,16 +626,20 @@ h4 {
   }
   #block1 figure {
     width: 100%;
-    margin-bottom: 1.1vw;
+    margin-bottom: 2.4vh;
     height: 180px;
   }
   #block2 figure {
     width: 100%;
-    margin-bottom: 1.1vw;
+    margin-bottom: 2.4vh;
     height: 180px;
   }
   #block2 {
     margin: 0;
+  }
+  #activite figcaption {
+    margin-top: 1vh;
+    margin-left: 4vw;
   }
   /************************* footer ************************/
   footer {
@@ -618,6 +647,7 @@ h4 {
     flex-direction: column;
     height: auto;
     width: 100%;
+    padding-left: 5.7vh;
   }
 }
 @media screen and (min-width: 851px) and (max-width: 1070px) {
@@ -625,16 +655,6 @@ h4 {
     font-size: 0.9rem;
   }
   #activite figcaption {
-    margin-top: 2px;
+    margin-top: 1vh;
   }
-}
-/* @media screen and (wax-width: 470px) {
-  header {
-    position: relative;
-  }
-  #signin {
-    position: absolute;
-    top: 0;
-    right: 0;
-  } */
 }
