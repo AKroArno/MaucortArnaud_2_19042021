@@ -39,8 +39,6 @@ header {
 }
 #logo img {
   width: 11vh;
-  align-items: center;
-  margin-right: auto;
 }
 #logo:hover {
   transform: scale(1.2);
@@ -74,24 +72,17 @@ nav a:hover {
 /************************** main ************************/
 /******** section searchBar *********/
 /* h1 p */
-#h1 {
-  flex-direction: column;
-  margin: 0;
-}
 h1 {
   margin-top: 1.1vw;
 }
 #h1 p {
   margin-top: 0.5vw;
-  font-size: 00.9rem;
-  font-weight: 100;
+  font-size: 0.9rem;
 }
 /************ formulaire ************/
 /* ville */
 #formulaire {
-  height: 50px;
   margin-top: 2.2vh;
-  font-weight: bold;
   font-size: 1.2rem;
   display: flex;
 }
@@ -110,7 +101,7 @@ h1 {
   transition: 0.4s;
 }
 #formulaire input[type="text"] {
-  font-size: 15px;
+  font-size: 1.1rem;
   width: 200px;
   padding: 10px;
   border-top: 1px solid #f2f2f2;
@@ -236,8 +227,6 @@ h1 {
   border-radius: 20px 20px 0px 0px;
 }
 .encartMarseille figcaption {
-  display: flex;
-  flex-direction: column;
   margin-left: 15px;
 }
 .texte {
@@ -253,7 +242,7 @@ h1 {
 #plus {
   font-weight: bold;
   font-size: 1.2rem;
-  margin-top: 5vh;
+  padding-top: 3vh;
 }
 /**************** populaire **************/
 #populaire {
@@ -281,8 +270,6 @@ h1 {
   height: 160px;
 }
 #populaire figure {
-  display: flex;
-  flex: 30%;
   background-color: white;
   box-shadow: 5px 5px 5px #d1d1d1;
   border-radius: 20px;
@@ -291,7 +278,6 @@ h1 {
 }
 .encartPopulaire img {
   width: 40%;
-  height: 100%;
   object-fit: cover;
   border-radius: 20px 0px 0px 20px;
 }
@@ -462,7 +448,7 @@ h4 {
     width: 40px;
   }
   #formulaire input[type="text"] {
-    width: 45vw;
+    width: 130px;
   }
   #hotels {
     flex-direction: column-reverse;
@@ -480,7 +466,7 @@ h4 {
   }
   /**************************** marseille ********************************/
   #marseille {
-    margin-right: 0px;
+    margin-right: 0;
     background: none;
   }
   #photoMarseille {
@@ -492,7 +478,7 @@ h4 {
     margin-right: 0;
   }
   #plus {
-    margin-top: 2vh;
+    margin-top: 1vw;
   }
   /***************************** activite *******************************/
   #activite {
@@ -546,11 +532,8 @@ h4 {
   }
   /**************************** footer ***********************************/
   footer {
-    margin: 0px;
     flex-direction: column;
     height: auto;
-    /* width: 100%; */
-    /* padding-left: 6vh; */
   }
 }
 @media screen and (min-width: 641px) and (max-width: 800px) {
@@ -614,7 +597,7 @@ h4 {
     flex: 100%;
   }
   #plus {
-    margin-top: 0vh;
+    padding-top: 1.2vw;
   }
   /*************************** populaire*****************/
   aside {
@@ -632,7 +615,6 @@ h4 {
   #activite {
     width: 95%;
     margin: auto;
-    /* height: auto; */
   }
   #photoActivite {
     flex-direction: column;
@@ -695,13 +677,15 @@ h4 {
   #marseille {
     margin: 2vw 0 0 0;
   }
+  #plus {
+    padding-top: 1.2vw;
+  }
   #activite {
-    margin-left: 2.2vw;
+    margin: 0 2.2vw 0 2.2vw;
   }
   #photoActivite {
     flex-direction: column;
     height: auto;
-    margin-right: 2.2vw;
   }
   #article1 {
     flex-direction: column;
