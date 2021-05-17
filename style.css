@@ -244,6 +244,9 @@ h1 {
   font-size: 1.2rem;
   padding-top: 3vh;
 }
+#plus:hover {
+  color: #0065fc;
+}
 /**************** populaire **************/
 #populaire {
   flex: 30%;
@@ -289,6 +292,9 @@ h1 {
 }
 #populaire p {
   margin-bottom: 35px;
+}
+.fa-chart-line {
+  font-size: 1.2rem;
 }
 .fa-chart-line:hover {
   transform: scale(1.3);
