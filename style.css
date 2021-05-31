@@ -337,6 +337,9 @@ h1 {
 #aPomegues {
   height: 50%;
 }
+#activite figure {
+  width: 100%;
+}
 #aFrioul {
   height: 50%;
   align-items: flex-end;
@@ -364,14 +367,12 @@ h1 {
   height: 66.5%;
   object-fit: cover;
 }
-#garde {
+#garde,
+#lonchamp {
   height: 45%;
 }
 #garde img {
   object-position: top;
-}
-#lonchamp {
-  height: 45%;
 }
 #activite figcaption {
   margin-left: 0.7vw;
@@ -417,17 +418,12 @@ h4 {
 /************************** Media queries ********************/
 
 @media screen and (min-width: 1025px) and (max-width: 1400px) {
-  #activite {
-    margin-bottom: 4vw;
-  }
   #article1,
   #article2 {
     flex-direction: column;
     width: 50%;
   }
-  .grandeImg .encartActivite {
-    width: 100%;
-  }
+  .grandeImg .encartActivite,
   .block1 {
     width: 100%;
   }
@@ -451,9 +447,6 @@ h4 {
   }
   #activite img {
     height: 70%;
-  }
-  #activite h3 {
-    margin: 0.2vw 0 0 1vw;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -565,9 +558,6 @@ h4 {
   #photoActivite {
     flex-direction: column;
     height: auto;
-  }
-  #activite h3 {
-    margin: 5px 0 0 10px;
   }
   .petiteImg,
   .grandeImg,
