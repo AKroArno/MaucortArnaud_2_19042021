@@ -266,13 +266,10 @@ h1 {
   flex-wrap: wrap;
 }
 .encartPopulaire {
-<<<<<<< Updated upstream
-=======
   width: 100%;
 }
 #populaire figure {
   display: flex;
->>>>>>> Stashed changes
   height: 160px;
   background-color: white;
   box-shadow: 5px 5px 5px #d1d1d1;
@@ -281,7 +278,8 @@ h1 {
   margin: 1.1vw 1.3vw 1vw 0vw;
 }
 .encartPopulaire img {
-  width: 40%;
+  min-width: 40%;
+  max-width: 40%;
   height: 160px;
   object-fit: cover;
   border-radius: 20px 0px 0px 20px;
