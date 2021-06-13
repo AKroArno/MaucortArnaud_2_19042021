@@ -124,6 +124,9 @@ h1 {
   color: rgba(0, 0, 0, 0.5);
   transition: 0.4s;
 }
+input {
+  font-family: inherit;
+}
 #loupe {
   display: none;
 }
