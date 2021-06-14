@@ -299,7 +299,7 @@ input {
   margin-bottom: 4vw;
 }
 #activite h3 {
-  margin: 1vw;
+  margin: 1.4vw 0 1.4vw 0;
 }
 #photoActivite {
   display: flex;
