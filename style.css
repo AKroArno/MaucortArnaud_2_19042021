@@ -167,6 +167,10 @@ input {
   padding-right: 10px;
 }
 #filtres i {
+  display: flex;
+  justify-content: center;
+  height: 15px;
+  width: 15px;
   background-color: #deebff;
   padding: 0.8rem;
   border-radius: 30px;
