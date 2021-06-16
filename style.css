@@ -278,6 +278,7 @@ input {
 }
 .encartPopulaire figcaption {
   display: flex;
+  flex: 2;
   flex-direction: column;
   justify-content: space-between;
   padding: 1.2vw;
