@@ -484,11 +484,23 @@ h4 {
   }
 }
 @media screen and (max-width: 800px) {
+  #body {
+    width: 100%;
+  }
+  #logo,
+  #h1,
+  form,
+  #filtres,
+  .info {
+    padding-left: 3vw;
+  }
   nav {
     width: 100%;
+    margin: 0;
   }
   nav ul {
     width: 100%;
+    padding: 0;
   }
   #signIn {
     position: absolute;
@@ -507,6 +519,9 @@ h4 {
   nav li:hover {
     border-bottom: 2px solid #0065fc;
   }
+  #h1 {
+    padding: 2vw 3vw 2vw 3vw;
+  }
   #rechercher {
     display: none;
   }
@@ -514,12 +529,11 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 15px;
     background-color: #0065fc;
     cursor: pointer;
     color: white;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 15px;
     border: 1px solid #f2f2f2;
     width: 40px;
   }
@@ -527,14 +541,22 @@ h4 {
     margin-left: 0px;
     margin-right: 4vw;
   }
+  /***************** populaire ************************/
+  #populaire {
+    padding: 4vw;
+    border-radius: 0;
+  }
+  #populaire figure {
+    margin: 3.5vw 0 0.5vw 0;
+  }
   /***************** marseille ************************/
   #marseille {
     background: none;
+    padding: 4vw;
   }
-  /************************ activite *********************/
+  /****************** activite ************************/
   #activite {
-    width: 95%;
-    margin: auto;
+    padding: 4vw;
   }
   #garde {
     margin: 0;
