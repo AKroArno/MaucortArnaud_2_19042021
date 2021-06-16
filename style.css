@@ -415,6 +415,7 @@ h4 {
 @media screen and (min-width: 2100px) {
   .encartPopulaire figcaption {
     display: block;
+    padding: 0.3vw;
   }
 }
 @media screen and (max-width: 1400px) {
